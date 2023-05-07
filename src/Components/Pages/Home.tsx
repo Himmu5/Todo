@@ -14,7 +14,6 @@ const Home: FC<P> = () => {
   const [FormToggle, setFormToggle] = useState(false);
   const [todo, setTodo] = useState<todo[]>([]);
 
-
   function handleClick() {
     setFormToggle(!FormToggle);
   }
@@ -36,7 +35,7 @@ const Home: FC<P> = () => {
     <div className="my-10 max-w-6xl space-y-8 mx-auto ">
       <h1 className="text-3xl font-bold">Things to get done</h1>
 
-      <TodoShow markChecked={markChecked} todo={todo} todoListType="false"/>
+      <TodoShow markChecked={markChecked} todo={todo} todoListType="false" />
 
       {FormToggle ? (
         <Form setFormToggle={setFormToggle} addTodo={addTodo} />

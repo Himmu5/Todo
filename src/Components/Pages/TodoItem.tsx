@@ -15,11 +15,10 @@ const TodoItem: FC<P> = ({ indx, obj, markChecked }) => {
     markChecked(indx);
   }
 
-  let extraClass = ""
-  if(obj.status === true){
-    extraClass =" line-through "
+  let extraClass = "";
+  if (obj.status === true) {
+    extraClass = " line-through ";
   }
-
 
   return (
     <div className="flex gap-1">
